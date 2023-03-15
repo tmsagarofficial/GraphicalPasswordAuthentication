@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home Page
+{% endblock %}
+
+
+{% block content %}
+<h1>Welcome {{ request.user.username }}</h1>
+<br>
+<h1>Authentication status: {{request.user.is_authenticated}}</h1>
+<br>
+<div class="secret-button" ><a href="{{ link }}">{{ msg }}</a>
+</div>
+
+<br>
+<p>
+    Depending on the Auth status, you will be seeing login/logout button at the top right.
+    <br>
+    <br>
+    Login: &nbsp&nbsp&nbspTo continue login
+    <br>
+    Logout: To sign out of the application
+</p>
+{% endblock %}
