@@ -61,8 +61,8 @@ def sendLoginLinkMailToUser(username):
         return False
     
     user_email=user.email
-    email_sender = 'v4tech2023@gmail.com'
-    email_password='oobkgcfqpxubqwkl'
+    email_sender = ''
+    email_password=''
     email_receiver=user_email
     subject ='Account Blocked'
     body="""
@@ -97,8 +97,8 @@ def sendPasswordResetLinkToUser(username):
         return False
     
     user_email=user.email
-    email_sender = 'v4tech2023@gmail.com'
-    email_password='oobkgcfqpxubqwkl'
+    email_sender = ''
+    email_password=''
     email_receiver=user_email
     subject ='Link to Reset your Password'
     body="""
